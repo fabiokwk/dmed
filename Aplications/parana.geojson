@@ -1,0 +1,24 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Paraná"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [longitude1, latitude1],
+              [longitude2, latitude2],
+              [longitude3, latitude3],
+              ...  // Outros pontos que formam o contorno do estado
+              [longitude1, latitude1]  // Fechando o polígono
+            ]
+          ]
+        }
+      }
+    ]
+  }
+  
