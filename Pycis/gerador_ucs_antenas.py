@@ -167,12 +167,12 @@ def center_window(root, width=400, height=200):
 
 # Configuração da janela principal
 root = Tk()
-root.title("Buscar Latitude e Longitude")
+root.title("Buscar antenas próximas")
 
 # Define a cor de fundo da janela principal
 root.configure(bg='darkblue')
 
-center_window(root, 280, 70)
+center_window(root, 320, 70)
 
 # Frame para o campo de entrada com cor de fundo azul
 frame = Frame(root, bg='darkblue')
