@@ -1,6 +1,11 @@
 '''
-
-
+Este programa calcula as três antenas mais próximas de cada UC listada em um arquivo CSV.
+Ele utiliza os dados de localização das UCs e das antenas, lidos de arquivos CSV e Excel, respectivamente.
+O cálculo das distâncias entre cada UC e as antenas é feito usando a fórmula de Haversine, que considera as coordenadas geográficas (latitude e longitude) para calcular a distância em quilômetros.
+O programa utiliza múltiplas threads para paralelizar o cálculo das distâncias, o que melhora a eficiência computacional ao processar grandes quantidades de dados.
+Para cada UC, são encontradas as três antenas mais próximas, e é verificado se a distância até a antena mais próxima é maior que 5 km, marcando essa informação no resultado final.
+Ao finalizar o cálculo das distâncias para todas as UCs, os resultados são salvos em um arquivo Excel para posterior análise.
+O programa também mede o tempo total de execução e exibe o resultado e o tempo de execução no console.
 '''
 
 import pandas as pd
