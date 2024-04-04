@@ -1,3 +1,14 @@
+''' 
+BUSCADOR DE LAT E LONG DE UC USANDO A SERIAL/NIO
+
+O código basicamente usa SELENIUM e PYAUTOGUI para buscar no HEMERA a latitude e a longitude de uma UC.
+
+Entra no site HEMERA, logga e vai clicando até encontrar a barra de pesquisa por serial. Ao encontrar, coloca uma lista de NIOS
+que o programa pega do arquivo "busca_ucs.txt" e formata tudo junto e separado por ";" e pesquisa encontrando as UCs, vai clicando
+e encontrando o numero da UC, latitude e longitude e armazenando em listas (pega também o nio e vai excluindo da lista no arquivo txt). Quando encerra, salva em um arquivo xlsx "ucs_encontradas.xlsx".
+O log fica no arquivo log_uc_hemera, com o tempo e a conclusao de cada numero da lista.
+'''
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
