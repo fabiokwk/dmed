@@ -1,3 +1,10 @@
+'''
+INTERFACE PARA BUSCADOR DE LAT E LONG
+
+Apenas permite o usuário colocar uma lista, salvar e depois executar o programa rpa_buscador_lat_long
+
+'''
+
 import tkinter as tk
 from tkinter import messagebox
 import threading
